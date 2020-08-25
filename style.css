@@ -1,0 +1,345 @@
+* {
+    text-shadow: -0.1vh 0 black, 0 0.1vh black, 0.1vh 0 black, 0 -0.1vh black, -0.1vh -0.1vh black, -0.1vh 0.1vh black, 0.1vh 0.1vh black, 0.1vh -0.1vh black;
+	text-align: center;
+    font-family: Ubuntu;
+    font-size: 3vh;
+	font-weight: bold;
+    color: #FFFFFF;
+}
+
+body {
+	display: inline-block;
+	margin-top: 5vh;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+div {
+	-webkit-user-select: none;  
+	-moz-user-select: none;   
+	text-align: center;
+}
+
+p {
+	font-size: 9vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+	margin: auto;
+}
+
+.bcontainer {
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+	margin: auto;
+	margin-top: 5vh;
+	margin-left: 12vh;
+}
+
+.bottom {
+    font-size: 1.5vh;
+    height: 4vh;
+    width: 8vh;
+}
+
+#number {
+	text-align: left;
+    font-size: 1.5vh;
+}
+
+#symbol {
+    font-size: 3.5vh;
+	margin-top: -0.9vh;
+}
+
+#name {
+    font-size: 1.15vh;
+}
+
+#unit {
+    font-size: 1.5vh;
+}
+
+#default {
+    background-color: rgba(0, 0, 0, 0);
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: rgba(0, 0, 0, 0);
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#container8 {
+    background-color: rgba(0, 0, 0, 0);
+    height: 2vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #000000;
+	border-style: hidden;
+	border-radius: 1.25vh;
+}
+
+#akali {
+    background-color: #f26863;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #a94c49;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#akaline {
+    background-color: #f2b263;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #a97c44;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#trans {
+    background-color: #f2df63;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #c0b14c;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#basic {
+    background-color: #c5f263;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #97c03c;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#semi {
+    background-color: #63f2b6;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #369970;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#non {
+    background-color: #61ff89;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #45b461;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#halo {
+    background-color: #df63f2;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #933ca1;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#noble {
+    background-color: #b463f2;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #8542b9;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#lanr {
+    background-color: #f0bdf2;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #b085b2;
+	border-style: solid;
+	border-radius: 1.25vh;
+	border-right: solid #78517a 0.625vh;
+}
+
+#lanl {
+    background-color: #f0bdf2;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #b085b2;
+	border-style: solid;
+	border-radius: 1.25vh;
+	border-left: solid #78517a 0.625vh;
+}
+
+#lan {
+    background-color: #f0bdf2;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #b085b2;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#actr {
+    background-color: #d64f7c;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #703046;
+	border-style: solid;
+	border-radius: 1.25vh;
+	border-right: solid #2f1a21 0.625vh;
+}
+
+#actl {
+    background-color: #d64f7c;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #703046;
+	border-style: solid;
+	border-radius: 1.25vh;
+	border-left: solid #2f1a21 0.625vh;
+}
+
+#act {
+    background-color: #d64f7c;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #703046;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#unk {
+    background-color: #e6e6e6;
+    height: 8vh;
+    width: 8vh;
+	border-width: 0.625vh;
+	border-color: #9e9e9e;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bakali {
+    background-color: #f26863;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #a94c49;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bakaline {
+    background-color: #f2b263;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #a97c44;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#btrans {
+    background-color: #f2df63;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #c0b14c;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bbasic {
+    background-color: #c5f263;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #97c03c;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bsemi {
+    background-color: #63f2b6;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #369970;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bnon {
+    background-color: #61ff89;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #45b461;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bhalo {
+    background-color: #df63f2;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #933ca1;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bnoble {
+    background-color: #b463f2;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #8542b9;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#blan {
+    background-color: #f0bdf2;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #b085b2;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#bact {
+    background-color: #d64f7c;
+    height: 2vh;
+    width: 13vh;
+	border-width: 0.625vh;
+	border-color: #703046;
+	border-style: solid;
+	border-radius: 1.25vh;
+}
+
+#title {
+	margin-left: 29vh;
+	margin-top: -100vh;
+	font-size: 20vh;
+    height: 2vh;
+    width: 70vh;
+}

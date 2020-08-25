@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+	<body onload="onLoad();"></body>
+	<script>
+		function onLoad() {
+			document.open();
+			let title = document.createElement("p"),
+				link = document.createElement("LINK"),
+				font = document.createElement("LINK");
+			document.title = "Periodic Table";
+			link.rel = font.rel = "stylesheet";
+			font.href = "https://fonts.googleapis.com/css?family=Ubuntu:400,700";
+			link.href = "style.css";
+			for (let y = 1; y < 11; y++) {
+				document.write(`<div class="container" id='container${y}'/></div>`);
+				for (let x = 1; x < 19; x++) {
+					let elem = document.createElement("div"),
+						p = `container${y}`;
+					elem.className = x;
+					elem.id = 'default';
+					document.getElementById(p).appendChild(elem);
+				}
+			}
+			class e {}
+			function d(list) {
+				let e = {};
+				for (let i = 0; i < list.length; i++) {
+					let c = document.getElementsByClassName(list[i].placement[1])[list[i].placement[0] - 1],
+						numb = document.createElement("div"),
+						symb = document.createElement("div"),
+						name = document.createElement("div"),
+						unit = document.createElement("div");
+					c.id = list[i].type;
+					numb.innerHTML = i + 1;
+					symb.innerHTML = list[i].symbol;
+					name.innerHTML = list[i].name;
+					unit.innerHTML = list[i].weight;
+					numb.id = 'number';
+					symb.id = 'symbol';
+					name.id = 'name';
+					unit.id = 'unit';
+					c.appendChild(numb);
+					c.appendChild(symb);
+					c.appendChild(name);
+					c.appendChild(unit);
+				}
+			}
+			e.elements = d([{
+				name: "Hydrogen", symbol: "H", placement: [1, 1], type: "semi", weight: 1.008
+			}, {
+				name: "Helium", symbol: "He", placement: [1, 18], type: "noble", weight: 4.003
+			}, {
+				name: "Lithium", symbol: "Li", placement: [2, 1], type: "akali", weight: 6.941
+			}, {
+				name: "Beryllium", symbol: "Be", placement: [2, 2], type: "akaline", weight: 9.012
+			}, {
+				name: "Boron", symbol: "B", placement: [2, 13], type: "semi", weight: 10.881
+			}, {
+				name: "Carbon", symbol: "C", placement: [2, 14], type: "non", weight: 12.011
+			}, {
+				name: "Nitrogen", symbol: "N", placement: [2, 15], type: "non", weight: 14.007
+			}, {
+				name: "Oxygen", symbol: "O", placement: [2, 16], type: "non", weight: 15.999
+			}, {
+				name: "Fluorine", symbol: "F", placement: [2, 17], type: "halo", weight: 18.998
+			}, {
+				name: "Neon", symbol: "Ne", placement: [2, 18], type: "noble", weight: 20.18
+			}, {
+				name: "Sodium", symbol: "Na", placement: [3, 1], type: "akali", weight: 22.99
+			}, {
+				name: "Magnesium", symbol: "Mg", placement: [3, 2], type: "akaline", weight: 24.305
+			}, {
+				name: "Aluminum", symbol: "Al", placement: [3, 13], type: "basic", weight: 26.982
+			}, {
+				name: "Silicon", symbol: "Si", placement: [3, 14], type: "semi", weight: 28.086
+			}, {
+				name: "Phosphorus", symbol: "P", placement: [3, 15], type: "non", weight: 30.974
+			}, {
+				name: "Sulfur", symbol: "S", placement: [3, 16], type: "non", weight: 32.066
+			}, {
+				name: "Chlorine", symbol: "Cl", placement: [3, 17], type: "halo", weight: 35.453
+			}, {
+				name: "Argon", symbol: "Ar", placement: [3, 18], type: "noble", weight: 39.948
+			}, {
+				name: "Potassium", symbol: "K", placement: [4, 1], type: "akali", weight: 39.098
+			}, {
+				name: "Calcium", symbol: "Ca", placement: [4, 2], type: "akaline", weight: 40.078
+			}, {
+				name: "Scandium", symbol: "Sc", placement: [4, 3], type: "trans", weight: 44.956
+			}, {
+				name: "Titanium", symbol: "Ti", placement: [4, 4], type: "trans", weight: 47.867
+			}, {
+				name: "Vanadium", symbol: "V", placement: [4, 5], type: "trans", weight: 50.942
+			}, {
+				name: "Chromium", symbol: "Cr", placement: [4, 6], type: "trans", weight: 51.996
+			}, {
+				name: "Manganese", symbol: "Mn", placement: [4, 7], type: "trans", weight: 54.938
+			}, {
+				name: "Iron", symbol: "Fe", placement: [4, 8], type: "trans", weight: 55.845
+			}, {
+				name: "Cobalt", symbol: "Co", placement: [4, 9], type: "trans", weight: 58.993
+			}, {
+				name: "Nickle", symbol: "Ni", placement: [4, 10], type: "trans", weight: 58.693
+			}, {
+				name: "Copper", symbol: "Cu", placement: [4, 11], type: "trans", weight: 63.546
+			}, {
+				name: "Zinc", symbol: "Zn", placement: [4, 12], type: "trans", weight: 65.38
+			}, {
+				name: "Gallium", symbol: "Ga", placement: [4, 13], type: "basic", weight: 69.732
+			}, {
+				name: "Germanium", symbol: "Ge", placement: [4, 14], type: "semi", weight: 72.631
+			}, {
+				name: "Arsenic", symbol: "As", placement: [4, 15], type: "semi", weight: 74.922
+			}, {
+				name: "Selenium", symbol: "Se", placement: [4, 16], type: "non", weight: 78.971
+			}, {
+				name: "Bromine", symbol: "Br", placement: [4, 17], type: "halo", weight: 79.904
+			}, {
+				name: "Krypton", symbol: "Kr", placement: [4, 18], type: "noble", weight: 84.798
+			}, {
+				name: "Rubidium", symbol: "Rb", placement: [5, 1], type: "akali", weight: 84.468
+			}, {
+				name: "Strontium", symbol: "Sr", placement: [5, 2], type: "akaline", weight: 87.62
+			}, {
+				name: "Yttrium", symbol: "Y", placement: [5, 3], type: "trans", weight: 88.906
+			}, {
+				name: "Zirconium", symbol: "Zr", placement: [5, 4], type: "trans", weight: 91.224
+			}, {
+				name: "Niobium", symbol: "Nb", placement: [5, 5], type: "trans", weight: 92.906
+			}, {
+				name: "Molybdenum", symbol: "Mo", placement: [5, 6], type: "trans", weight: 95.95
+			}, {
+				name: "Technetium", symbol: "Tc", placement: [5, 7], type: "trans", weight: 98.907
+			}, {
+				name: "Ruthenium", symbol: "Ru", placement: [5, 8], type: "trans", weight: 101.07
+			}, {
+				name: "Rhodium", symbol: "Rh", placement: [5, 9], type: "trans", weight: 102.906
+			}, {
+				name: "Palladium", symbol: "Pd", placement: [5, 10], type: "trans", weight: 106.42
+			}, {
+				name: "Silver", symbol: "Ag", placement: [5, 11], type: "trans", weight: 107.868
+			}, {
+				name: "Cadmium", symbol: "Cd", placement: [5, 12], type: "trans", weight: 112.414
+			}, {
+				name: "Indium", symbol: "In", placement: [5, 13], type: "basic", weight: 114.818
+			}, {
+				name: "Tin", symbol: "Sn", placement: [5, 14], type: "basic", weight: 118.711
+			}, {
+				name: "Antimony", symbol: "Sb", placement: [5, 15], type: "semi", weight: 121.76
+			}, {
+				name: "Tellurium", symbol: "Te", placement: [5, 16], type: "semi", weight: 127.6
+			}, {
+				name: "Iodine", symbol: "I", placement: [5, 17], type: "halo", weight: 126.904
+			}, {
+				name: "Xenon", symbol: "Xe", placement: [5, 18], type: "noble", weight: 131.294
+			}, {
+				name: "Cesium", symbol: "Cs", placement: [6, 1], type: "akali", weight: 132.905
+			}, {
+				name: "Barium", symbol: "Ba", placement: [6, 2], type: "akaline", weight: 137.328
+			}, {
+				name: "Lanthanium", symbol: "La", placement: [6, 3], type: "lanr", weight: 138.905
+			}, {
+				name: "Cerium", symbol: "Ce", placement: [9, 4], type: "lanl", weight: 140.116
+			}, {
+				name: "Praseodymium", symbol: "Pr", placement: [9, 5], type: "lan", weight: 140.908
+			}, {
+				name: "Neodymium", symbol: "Nd", placement: [9, 6], type: "lan", weight: 144.243
+			}, {
+				name: "Promethium",symbol: "Pm", placement: [9, 7], type: "lan", weight: 144.913
+			}, {
+				name: "Samarium", symbol: "Sm", placement: [9, 8], type: "lan", weight: 150.32
+			}, {
+				name: "Europium", symbol: "Eu", placement: [9, 9], type: "lan", weight: 151.964
+			}, {
+				name: "Gadolinium", symbol: "Gd", placement: [9, 10], type: "lan", weight: 157.25
+			}, {
+				name: "Terbium", symbol: "Tb", placement: [9, 11], type: "lan", weight: 158.925
+			}, {
+				name: "Dysprosium", symbol: "Dy", placement: [9, 12], type: "lan", weight: 162.5
+			}, {
+				name: "Holmium", symbol: "Ho", placement: [9, 13], type: "lan", weight: 164.93
+			}, {
+				name: "Erbium", symbol: "Er", placement: [9, 14], type: "lan", weight: 167.259
+			}, {
+				name: "Thulium", symbol: "Tm", placement: [9, 15], type: "lan", weight: 168.934
+			}, {
+				name: "Ytterbium", symbol: "Yb", placement: [9, 16], type: "lan", weight: 173.055
+			}, {
+				name: "Lutetium", symbol: "Lu", placement: [9, 17], type: "lan", weight: 174.967
+			}, {
+				name: "Hafnium", symbol: "Hf", placement: [6, 4], type: "trans",weight: 178.49
+			}, {
+				name: "Tantalum", symbol: "Ta", placement: [6, 5], type: "trans", weight: 180.948
+			}, {
+				name: "Tungsten", symbol: "W", placement: [6, 6], type: "trans", weight: 183.84
+			}, {
+				name: "Rhenium", symbol: "Re", placement: [6, 7], type: "trans", weight: 186.207
+			}, {
+				name: "Osmium", symbol: "Os", placement: [6, 8], type: "trans", weight: 190.23
+			}, {
+				name: "Iridium", symbol: "Ir", placement: [6, 9], type: "trans", weight: 192.217
+			}, {
+				name: "Platinum", symbol: "Pt", placement: [6, 10], type: "trans", weight: 195.085
+			}, {
+				name: "Gold", symbol: "Au", placement: [6, 11], type: "trans", weight: 196.967
+			}, {
+				name: "Mercury", symbol: "Hg", placement: [6, 12], type: "trans", weight: 200.592
+			}, {
+				name: "Thallium", symbol: "Tl", placement: [6, 13], type: "basic", weight: 204.383
+			}, {
+				name: "Lead", symbol: "Pb", placement: [6, 14], type: "basic", weight: 207.2
+			}, {
+				name: "Bismuth", symbol: "Bi", placement: [6, 15], type: "basic", weight: 208.98
+			}, {
+				name: "Polonium", symbol: "Po", placement: [6, 16], type: "semi", weight: '[208.982]'
+			}, {
+				name: "Astatine", symbol: "At", placement: [6, 17], type: "halo", weight: 209.987
+			}, {
+				name: "Radon", symbol: "Rn", placement: [6, 18], type: "noble", weight: 222.018
+			}, {
+				name: "Francium", symbol: "Fr", placement: [7, 1], type: "akali", weight: 223.02
+			}, {
+				name: "Radium", symbol: "Ra", placement: [7, 2], type: "akaline", weight: 226.025
+			}, {
+				name: "Actinium", symbol: "Ac", placement: [7, 3], type: "actr", weight: 227.028
+			}, {
+				name: "Thorium", symbol: "Th", placement: [10, 4], type: "actl", weight: 232.038
+			}, {
+				name: "Protactinium", symbol: "Pa", placement: [10, 5], type: "act", weight: 231.036
+			}, {
+				name: "Uranium", symbol: "U", placement: [10, 6], type: "act", weight: 238.029
+			}, {
+				name: "Neptunium", symbol: "Np", placement: [10, 7], type: "act", weight: 237.048
+			}, {
+				name: "Plutonium", symbol: "Pu", placement: [10, 8], type: "act", weight: 244.064
+			}, {
+				name: "Americium", symbol: "Am", placement: [10, 9], type: "act", weight: 243.061
+			}, {
+				name: "Curium", symbol: "Cm", placement: [10, 10], type: "act", weight: 247.07
+			}, {
+				name: "Berkelium", symbol: "Bk", placement: [10, 11], type: "act", weight: 247.07
+			}, {
+				name: "Califomium",symbol: "Cf", placement: [10, 12], type: "act", weight: 251.08
+			}, {
+				name: "Einsteinium", symbol: "Es", placement: [10, 13], type: "act", weight: '[254]'
+			}, {
+				name: "Fermium", symbol: "Fm", placement: [10, 14], type: "act", weight: 257.095
+			}, {
+				name: "Mendelevium", symbol: "Md", placement: [10, 15], type: "act", weight: 258.1
+			}, {
+				name: "Nobellium", symbol: "No", placement: [10, 16], type: "act", weight: 259.101
+			}, {
+				name: "Lawrencium", symbol: "Lr", placement: [10, 17], type: "act", weight: '[262]'
+			}, {
+				name: "Rutherfordium", symbol: "Rf", placement: [7, 4], type: "trans", weight: '[261]'
+			}, {
+				name: "Dubnium", symbol: "Db", placement: [7, 5], type: "trans", weight: '[262]'
+			}, {
+				name: "Seaborgium", symbol: "Sg", placement: [7, 6], type: "trans", weight: '[266]'
+			}, {
+				name: "Bohrium", symbol: "Bg", placement: [7, 7], type: "trans", weight: '[264]'
+			}, {
+				name: "Hassium", symbol: "Hs", placement: [7, 8], type: "trans", weight: '[269]'
+			}, {
+				name: "Meitnerium", symbol: "Mt", placement: [7, 9], type: "trans", weight: '[268]'
+			}, {
+				name: "Darmstadtium", symbol: "Ds", placement: [7, 10], type: "trans", weight: '[269]'
+			}, {
+				name: "Roentgenium", symbol: "Rg", placement: [7, 11], type: "trans", weight: '[272]'
+			}, {
+				name: "Copernicium", symbol: "Cn", placement: [7, 12], type: "trans", weight: '[277]'
+			}, {
+				name: "Nihonium", symbol: "Nh", placement: [7, 13], type: "basic", weight: '[286]'
+			}, {
+				name: "Flerovium", symbol: "Fl", placement: [7, 14], type: "basic", weight: '[289]'
+			}, {
+				name: "Moscovium", symbol: "Mc", placement: [7, 15], type: "basic", weight: '[290]'
+			}, {
+				name: "Livermorium", symbol: "Lv", placement: [7, 16], type: "basic", weight: '[293]'
+			}, {
+				name: "Tennessine", symbol: "Ts", placement: [7, 17], type: "halo", weight: '[294]'
+			}, {
+				name: "Oganesson", symbol: "Og", placement: [7, 18], type: "noble", weight: '[294]'
+			}]);
+			document.write('<div class="bcontainer" id="key"><div id="bakali" class="bottom">Akali Metal</div><div id="bakaline" class="bottom">Akaline Earth</div><div id="btrans" class="bottom">Transition Metal</div><div id="bbasic" class="bottom">Basic Metal</div><div id="bsemi" class="bottom">Semimetal</div><div id="bnon" class="bottom">Nonmetal</div><div id="bhalo" class="bottom">Halogen</div><div id="bnoble" class="bottom">Noble Gas</div><div id="blan" class="bottom">Lanthanide</div><div id="bact" class="bottom">Actinide</div></div><div id="title"/></div>');
+			title.innerHTML = 'Periodic Table of the Elements';
+			document.getElementById('title').appendChild(title);
+			document.head.appendChild(link);
+			document.head.appendChild(font);
+			document.close();
+		}
+	</script>
+</html>
